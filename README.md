@@ -1,6 +1,6 @@
 ## 特点
 
-* 基础镜像：[adoptopenjdk:15-jre-openj9](https://github.com/docker-library/docs/blob/master/adoptopenjdk/README.md#shared-tags)
+* 基础镜像：[adoptopenjdk:11-jre-openj9](https://hub.docker.com/layers/adoptopenjdk/library/adoptopenjdk/11-jre-openj9/images/sha256-10ed35d723510fa10ee600eb903e4da24ae41b0da3710d2cb7815af55cc7b7c8?context=explore)
 * 软源镜像：中国科学技术大学 mirrors.ustc.edu.cn
 * 基础工具：wget, nano
 * 中文时区：**Asia/Shanghai**
