@@ -1,6 +1,6 @@
 ## 特点
 
-* 基础镜像：[adoptopenjdk:11-jre-openj9](https://hub.docker.com/layers/adoptopenjdk/library/adoptopenjdk/11-jre-openj9/images/sha256-10ed35d723510fa10ee600eb903e4da24ae41b0da3710d2cb7815af55cc7b7c8?context=explore)
+* 基础镜像：[adoptopenjdk/openjdk11:jre](https://github.com/AdoptOpenJDK/openjdk-docker/blob/master/11/jre/ubuntu/Dockerfile.hotspot.releases.full)
 * 软源镜像：中国科学技术大学 mirrors.ustc.edu.cn
 * 基础工具：wget, nano
 * 中文时区：**Asia/Shanghai**
@@ -9,13 +9,13 @@
 ## 构建
 
 ```
-$ docker build -t registry.cn-shanghai.aliyuncs.com/xm69/jre:openj9 .
+$ docker build -t registry.cn-shanghai.aliyuncs.com/xm69/jre:11 .
 ```
 
 ## 测试
 
 ```
-$ docker run -it --rm registry.cn-shanghai.aliyuncs.com/xm69/jre:openj9 java -version
+$ docker run -it --rm registry.cn-shanghai.aliyuncs.com/xm69/jre:11 java -version
 ```
 
 ## 使用
@@ -28,7 +28,7 @@ $ docker run -d --restart=always \
   -p 10000:6000 \
   -e POSTGRES_JDBC="jdbc:postgresql://172.17.0.1:10010" \
   -v ${PWD}/app:/app \
-  --name "java-grpc" registry.cn-shanghai.aliyuncs.com/xm69/jre:openj9 \
+  --name "java-grpc" registry.cn-shanghai.aliyuncs.com/xm69/jre:11 \
   /app/bin/grpc
 ```
 > 说明: `/app/bin/grpc`为应用入口.

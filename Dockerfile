@@ -1,4 +1,4 @@
-FROM adoptopenjdk:11-jre-openj9
+FROM adoptopenjdk/openjdk11:jre
 
 ENV DEBIAN_FRONTEND="noninteractive"
 
