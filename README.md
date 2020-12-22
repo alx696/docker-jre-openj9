@@ -1,6 +1,6 @@
 ## 特点
 
-* 基础镜像：[adoptopenjdk/openjdk11:jre](https://github.com/AdoptOpenJDK/openjdk-docker/blob/master/11/jre/ubuntu/Dockerfile.hotspot.releases.full)
+* 基础镜像：adoptopenjdk/openjdk11-openj9:jre
 * 软源镜像：中国科学技术大学 mirrors.ustc.edu.cn
 * 基础工具：wget, nano
 * 中文时区：**Asia/Shanghai**
